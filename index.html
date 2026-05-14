@@ -1,12 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeOrigen</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeOrigen Talento Mundial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f3ee;
+      color: #111827;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .hero {
+      background: #111827;
+      color: white;
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 900px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .pill {
+      display: inline-block;
+      background: rgba(255,255,255,.12);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .btn {
+      display: inline-block;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .login input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      font-size: 16px;
+    }
+    .login button {
+      width: 100%;
+      padding: 12px 14px;
+      border: 0;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .muted {
+      color: #6b7280;
+    }
+    ul {
+      padding-left: 18px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="pill">Reclutamiento internacional para automoción y metal-mecánica</div>
+      <h1>DeOrigen Talento Mundial</h1>
+      <p style="font-size:18px;max-width:800px;line-height:1.7;">
+        Conectamos talleres y concesionarios con talento técnico listo para trabajar en España.
+        También acompañamos a perfiles metal-mecánicos que quieren migrar con una oportunidad real.
+      </p>
+      <a class="btn" href="#contacto">Quiero información</a>
+    </section>
+
+    <section class="grid grid-2">
+      <div class="card">
+        <h2>Para empresas</h2>
+        <p class="muted">Ayudamos a cubrir vacantes técnicas con perfiles alineados al puesto.</p>
+        <ul>
+          <li>Mecánicos</li>
+          <li>Electromecánicos</li>
+          <li>Chapistas y pintores</li>
+          <li>Técnicos para concesionarios</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Para candidatos</h2>
+        <p class="muted">Oportunidades reales para perfiles que buscan migrar a España.</p>
+        <ul>
+          <li>Acompañamiento en el proceso</li>
+          <li>Orientación sobre vacantes</li>
+          <li>Perfiles metal-mecánicos</li>
+          <li>Proceso humano y claro</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid grid-2" style="margin-top:20px;">
+      <div class="card" id="contacto">
+        <h2>Contacto</h2>
+        <p class="muted">Aquí puedes poner tu WhatsApp y correo reales.</p>
+        <p><strong>WhatsApp:</strong> +502 0000 0000</p>
+        <p><strong>Correo:</strong> contacto@deorigentalentomundial.com</p>
+      </div>
+
+      <div class="card login">
+        <h2>Login empresas</h2>
+        <p class="muted">Acceso exclusivo para empresas registradas.</p>
+        <input type="email" placeholder="Correo de empresa" />
+        <input type="password" placeholder="Contraseña" />
+        <button>Entrar</button>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
